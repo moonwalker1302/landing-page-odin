@@ -1,7 +1,7 @@
 body {
     margin: 0px;
-    background-color: #f9faf8;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -13,14 +13,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
-    padding: 12px 120px;
+    align-items: center;
+    width: 100vw; 
     gap: 56px;
+    padding: 24px 0px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: calc(100vw - 240px);
 }
 
 .logo {
@@ -47,6 +50,7 @@ li {
     display: flex;
     justify-content: space-between;
     padding-bottom: 56px;
+    width: calc(100vw - 240px);
 }
 .main-text {
     display: flex;
@@ -85,4 +89,109 @@ li {
     justify-content: center;
     align-items: center;
     background-color: teal;
+}
+/* Start Information Section */
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    width: calc(100vw - 240px);
+}
+
+.info-section h2 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+.cards {
+    display: flex;
+    gap: 56px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 180px;
+    height: 180px;
+    border: 5px solid #3882f6;
+    border-radius: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 180px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 18px;
+    color: #1f2937;
+    margin: 0px;
+    padding: 8px;
+}
+/*Start Quote Section */
+.quote-section {
+    background-color: #e5e7eb;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0px;
+}
+.quote {
+    width: calc(100vw - 240px);
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+    margin: 0px;
+}
+.quote-author {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0px;
+    text-align: end;
+    width: calc(100vw - 240px);
+}
+/* End Quote Section */
+
+/* Start Call to Action Section */
+.cta-section {
+    width: 100vw;
+    padding: 56px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
+}
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3882f6;
+    padding: 16px 32px;
+    border-radius: 12px;
+    gap: 1em;
+}
+.cta-content button {
+    background: none;
+    border: 1px solid #f9faf8;
+    border-radius: 12px;
+    color: #f9faf8;
+    padding: 12px 18px;
+    height: fit-content;
+    font-size: 1em;
+}
+footer {
+    background-color: #1f2937;
+    width: 100vw;
+    height: 56px;
 }
